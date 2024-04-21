@@ -1,0 +1,340 @@
+*reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header img {
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+
+    background-color: blue;
+    margin-top: -7px;
+    margin-right: -7px;
+    margin-bottom: 0px;
+    margin-left: -7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a:hover {
+    background-color: red;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*PARA INICIO*/
+.galeria1 {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    text-align: center;
+    justify-content: center;
+}
+
+.inicio {
+    text-align: center;
+    justify-content: center;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iniciotext {
+    color: white;
+}
+
+.carrusel {
+    display: flex;
+    height: 200px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 3px solid red;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+}
+
+section :hover {
+    width: 100%;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+/*para proyecto avengers*/
+.containerdos {
+    display: flex;
+    margin: 10px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyectoavengers {
+    color: blue;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.texto {
+    text-align: center;
+    color: red;
+}
+
+.texto h1 {
+    margin-top: 10px;
+}
+
+main .texto h1 span {
+    display: block;
+}
+
+main .nick img {
+    display: flex;
+    justify-content: center;
+}
+
+main .nick {
+    display: flex;
+    justify-content: center;
+}
+
+main .nick img {
+    width: 40%;
+    position: sticky;
+}
+
+.pa {
+    text-align: center;
+}
+
+.pa h2 {
+    color: blue;
+    text-align: center;
+}
+
+.proytex {
+    color: white;
+}
+
+/*CAPITAN AMERICA*/
+.containertres {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.titulocap {
+    color: blue;
+    text-align: center;
+}
+
+.texto2 {
+    color: white;
+    text-align: center;
+}
+
+main .cap {
+    display: flex;
+    justify-content: center;
+}
+
+.steve {
+    margin-bottom: 100px;
+}
+
+.sr {
+    text-align: center;
+}
+
+.steve div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.steve div div {
+    flex: 1;
+    margin: 5px;
+}
+
+.steve img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*HISTORIA DE TONY*/
+.containercuatro {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.tonyt {
+    color: red;
+    text-align: center;
+}
+
+.texto3 {
+    color: white;
+    text-align: center;
+}
+
+main .ts {
+    display: flex;
+    justify-content: center;
+}
+
+main .ts img {
+    width: 70%;
+}
+
+.tst {
+    text-align: center;
+    color: red;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+}
+
+.carrusel2 {
+    display: flex;
+    height: 200px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel2 img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 3px solid red;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+}
+
+section :hover {
+    width: 100%;
+}
+
+/*para historia thor*/
+.containerseis {
+    display: flex;
+}
+
+.thotimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.thorttexto {
+    color: white;
+    text-align: center;
+}
+
+.thorttexto2 {
+    color: red;
+    text-align: center;
+}
+
+.thort {
+    color: red;
+    justify-content: center;
+    text-align: center;
+}
+
+.containersiete {
+    display: flex;
+    margin-top: 20px;
+}
+
+.thortexto3 {
+    color: white;
+    text-align: center;
+}
+
+.titulothor2 {
+    color: greenyellow;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    header img {
+        width: 25%;
+    }
+}
+
+body {
+    footer {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header img {
+        width: 20%;
+    }
+
+    main .cap img {
+        display: block;
+        width: 30vh;
+        position: sticky
+    }
+
+    main .cap {
+        display: flex;
+        align-items: center;
+    }
+
+    body {
+        footer {
+            margin-top: 140px;
+        }
+    }
+
+    .steve img {
+        width: 100%;
+
+
+    }
+}

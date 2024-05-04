@@ -1,340 +1,262 @@
-*reset {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header img {
-    width: 30%;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(16, 14, 14);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-
-    background-color: blue;
-    margin-top: -7px;
-    margin-right: -7px;
-    margin-bottom: 0px;
-    margin-left: -7px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+  background-color: red;
+  margin-top: -5px;
+  margin-right: -7px;
+  margin-bottom: 0px;
+  margin-left: -7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 30%;
+  justify-content: center;
+  align-items: center;
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
+main.container {
+  max-width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+main.container nav ul {
+  text-align: center;
+  list-style: none;
+}
+main.container nav ul li {
+  margin-top: 5px;
+}
+main.container nav ul li a {
+  text-decoration: none;
+}
+main.container nav ul li a:hover {
+  color: pink;
+}
+main.container .inicio {
+  color: blue;
+}
+main.container .iniciotext {
+  color: white;
 }
 
-nav ul li a:hover {
-    background-color: red;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-/*PARA INICIO*/
-.galeria1 {
-    color: white;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.container {
-    text-align: center;
-    justify-content: center;
-}
-
-.inicio {
-    text-align: center;
-    justify-content: center;
-    color: red;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.iniciotext {
-    color: white;
+section.container2 .galeria1 {
+  color: yellow;
+  text-align: center;
 }
 
 .carrusel {
-    display: flex;
-    height: 200px;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  width: auto;
+  height: 150px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
-
 .carrusel img {
-    width: 20%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 40px;
-    border: 3px solid red;
-    transition: all ease-out 0.5s;
-    cursor: pointer;
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  border: 3px solid red;
+  transition: all ease-out 0.5s;
+  cursor: pointer;
 }
-
-section :hover {
-    width: 100%;
+.carrusel img:hover {
+  width: 300px;
+  height: 300px;
 }
 
 footer {
-    color: white;
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+}
+footer h6 {
+  color: white;
+  font-size: 10px;
 }
 
-/*para proyecto avengers*/
-.containerdos {
-    display: flex;
-    margin: 10px 50px;
-    align-items: center;
-    justify-content: center;
+main.containertres {
+  display: flex;
+  text-align: center;
+}
+main.containertres .proyectoavengers {
+  color: blue;
+}
+main.containertres .iniciotext2 {
+  color: white;
+}
+main.containertres .iniciotext3 {
+  color: white;
+}
+main.containertres .nick {
+  text-align: center;
+  padding: 20px;
+}
+main.containertres .nick img {
+  width: 30%;
 }
 
-.proyectoavengers {
-    color: blue;
-    text-align: center;
-    margin-top: 10px;
+section.containercuatro {
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+section.containercuatro .proytex {
+  color: white;
+}
+section.containercuatro span {
+  display: block;
+  text-decoration: underline;
+}
+section.containercuatro .pa {
+  color: pink;
 }
 
-.texto {
-    text-align: center;
-    color: red;
+main.containercinco {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+main.containercinco .tonyt {
+  color: blue;
+  text-align: center;
+}
+main.containercinco .tonytext {
+  color: white;
 }
 
-.texto h1 {
-    margin-top: 10px;
+section.containerseis {
+  text-align: center;
+  color: yellow;
+}
+section.containerseis .tst {
+  margin-top: 20px;
+}
+section.containerseis .carrusel2 {
+  display: flex;
+  height: 200px;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+section.containerseis .carrusel2 :hover {
+  width: 300px;
+  height: 300px;
+}
+section.containerseis .carrusel2 img {
+  width: 15%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  border: 3px solid red;
+  transition: all ease-out 0.5s;
+  cursor: pointer;
 }
 
-main .texto h1 span {
-    display: block;
+main.containercap {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+main.containercap .titulocap {
+  color: blue;
+  text-align: center;
 }
 
-main .nick img {
-    display: flex;
-    justify-content: center;
+section.steve img {
+  max-width: 100%;
+  height: auto;
+}
+section.steve div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+  margin: 5px;
+}
+section.steve .sr {
+  color: yellow;
+  text-align: center;
 }
 
-main .nick {
-    display: flex;
-    justify-content: center;
+main.containersiete {
+  display: flex;
+  text-align: center;
+  color: blue;
+  padding: 15px;
+}
+main.containersiete img {
+  width: 50%;
+}
+main.containersiete .thortext {
+  color: white;
+  text-align: center;
+}
+main.containersiete .thortext2 {
+  color: gray;
 }
 
-main .nick img {
-    width: 40%;
-    position: sticky;
+section.containerocho {
+  text-align: center;
+  color: white;
 }
-
-.pa {
-    text-align: center;
+section.containerocho .titulot {
+  color: green;
 }
-
-.pa h2 {
-    color: blue;
-    text-align: center;
-}
-
-.proytex {
-    color: white;
-}
-
-/*CAPITAN AMERICA*/
-.containertres {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.titulocap {
-    color: blue;
-    text-align: center;
-}
-
-.texto2 {
-    color: white;
-    text-align: center;
-}
-
-main .cap {
-    display: flex;
-    justify-content: center;
-}
-
-.steve {
-    margin-bottom: 100px;
-}
-
-.sr {
-    text-align: center;
-}
-
-.steve div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.steve div div {
-    flex: 1;
-    margin: 5px;
-}
-
-.steve img {
-    max-width: 100%;
-    height: auto;
-}
-
-/*HISTORIA DE TONY*/
-.containercuatro {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.tonyt {
-    color: red;
-    text-align: center;
-}
-
-.texto3 {
-    color: white;
-    text-align: center;
-}
-
-main .ts {
-    display: flex;
-    justify-content: center;
-}
-
-main .ts img {
-    width: 70%;
-}
-
-.tst {
-    text-align: center;
-    color: red;
-}
-
-.carrusel {
-    display: flex;
-    justify-content: center;
-}
-
-.carrusel2 {
-    display: flex;
-    height: 200px;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
-}
-
-.carrusel2 img {
-    width: 20%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 40px;
-    border: 3px solid red;
-    transition: all ease-out 0.5s;
-    cursor: pointer;
-}
-
-section :hover {
-    width: 100%;
-}
-
-/*para historia thor*/
-.containerseis {
-    display: flex;
-}
-
-.thotimg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.thorttexto {
-    color: white;
-    text-align: center;
-}
-
-.thorttexto2 {
-    color: red;
-    text-align: center;
-}
-
-.thort {
-    color: red;
-    justify-content: center;
-    text-align: center;
-}
-
-.containersiete {
-    display: flex;
-    margin-top: 20px;
-}
-
-.thortexto3 {
-    color: white;
-    text-align: center;
-}
-
-.titulothor2 {
-    color: greenyellow;
-    text-align: center;
+section.containerocho .thortext3 {
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
 
 @media screen and (min-width: 600px) {
-    header img {
-        width: 25%;
-    }
+  header img {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
-body {
-    footer {
-        margin-top: 150px;
-    }
+footer {
+  margin-top: 170px;
+  text-align: center;
+}
+footer h6 {
+  color: white;
+  font-size: 10px;
 }
 
 @media screen and (min-width: 1024px) {
-    header img {
-        width: 20%;
-    }
-
-    main .cap img {
-        display: block;
-        width: 30vh;
-        position: sticky
-    }
-
-    main .cap {
-        display: flex;
-        align-items: center;
-    }
-
-    body {
-        footer {
-            margin-top: 140px;
-        }
-    }
-
-    .steve img {
-        width: 100%;
-
-
-    }
+  header li {
+    justify-content: center;
+    align-items: center;
+  }
+  header img {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    margin-top: 200px;
+    text-align: center;
+  }
+  footer h6 {
+    color: white;
+    font-size: 10px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

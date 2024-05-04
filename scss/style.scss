@@ -1,0 +1,218 @@
+*reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "../scss/utilidades/variables";
+@import "../scss/utilidades/listas";
+@import "../scss/utilidades/mixin";
+
+body {
+    background-color: rgb(16, 14, 14);
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: $color-principal;
+    margin-top: -5px;
+    margin-right: -7px;
+    margin-bottom: 0px;
+    margin-left: -7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+main.container {
+    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+    nav {
+        ul {
+            text-align: center;
+            list-style: none;
+            li {
+                margin-top: 5px;
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        color: $color-texto-hover;
+                    }
+                }
+            }
+        }
+    }
+    .inicio {
+        color: $color-secundario;
+    }
+    .iniciotext {
+        color: white;
+    }
+}
+section.container2 {
+    .galeria1 {
+        color: $color-cuarto;
+        text-align: center;
+    }
+}
+.carrusel {
+    display: flex;
+    width: auto;
+    height: 150px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    img {
+        width: 20%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 40px;
+        border: 3px solid red;
+        transition: all ease-out 0.5s;
+        cursor: pointer;
+        &:hover {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
+footer {
+    text-align: center;
+    h6 {
+        color: white;
+        font-size: 10px;
+    }
+}
+main.containertres {
+    display: flex;
+    text-align: center;
+    .proyectoavengers {
+        color: $color-secundario;
+    }
+    .iniciotext2 {
+        color: white;
+    }
+    .iniciotext3 {
+        color: white;
+    }
+    .nick {
+        text-align: center;
+        padding: 20px;
+
+        img {
+            width: 30%;
+        }
+    }
+}
+section.containercuatro {
+    color: white;
+    text-align: center;
+    align-items: center;
+    .proytex {
+        color:  white;
+    }
+    span {
+        display: block;
+        text-decoration: underline;
+    }
+    .pa {
+        color: pink;
+    }
+}
+main.containercinco {
+    @include flex;
+    .tonyt {
+        color: $color-secundario;
+        text-align: center;
+    }
+    .tonytext {
+        color: white;
+    }
+}
+section.containerseis {
+    text-align: center;
+    color: $color-cuarto;
+    .tst {
+        margin-top: 20px;
+    }
+    .carrusel2 {
+        display: flex;
+        height: 200px;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        :hover {
+            width: 300px;
+            height: 300px;
+        }
+        img {
+            width: 15%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 40px;
+            border: 3px solid red;
+            transition: all ease-out 0.5s;
+            cursor: pointer;
+        }
+    }
+}
+main.containercap {
+    @include flex;
+    .titulocap {
+        color: $color-secundario;
+        text-align: center;
+    }
+}
+section.steve {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 1;
+        margin: 5px;
+    }
+    .sr {
+        color: $color-cuarto;
+        text-align: center;
+    }
+}
+main.containersiete {
+    display: flex;
+    text-align: center;
+    color: $color-secundario;
+    padding: 15px;
+    img {
+        width: 50%;
+    }
+    .thortext {
+        color: white;
+        text-align: center;
+    }
+    .thortext2 {
+        color: nth($colores, 3);
+    }
+}
+section.containerocho {
+    text-align: center;
+    color: white;
+    .titulot {
+        color: $color-terciario;
+    }
+    .thortext3 {
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+}
+@import "../scss/mediaquery.scss/mq";

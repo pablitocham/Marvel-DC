@@ -1,4 +1,4 @@
-* reset {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -54,35 +54,40 @@ main.container .iniciotext {
 section.container2 .galeria1 {
   color: yellow;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .carrusel {
   display: flex;
-  width: auto;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   gap: 5px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .carrusel img {
-  width: 20%;
-  height: 100%;
+  width: 80%;
+  height: auto;
+  max-height: 150px;
   object-fit: cover;
-  border-radius: 40px;
+  border-radius: 10px;
   border: 3px solid red;
   transition: all ease-out 0.5s;
   cursor: pointer;
 }
 .carrusel img:hover {
+  max-height: 300px;
   width: 300px;
-  height: 300px;
 }
 
 footer {
+  margin-top: 170px;
   text-align: center;
 }
-footer h6 {
+footer h3 {
   color: white;
   font-size: 10px;
 }
@@ -105,7 +110,7 @@ main.containertres .nick {
   padding: 20px;
 }
 main.containertres .nick img {
-  width: 30%;
+  width: 50%;
 }
 
 section.containercuatro {
@@ -137,33 +142,35 @@ main.containercinco .tonyt {
 main.containercinco .tonytext {
   color: white;
 }
+main.containercinco span {
+  display: block;
+  text-decoration: underline;
+}
 
-section.containerseis {
+section.grid-container {
   text-align: center;
   color: yellow;
 }
-section.containerseis .tst {
+section.grid-container img {
+  width: 100%;
+  height: 100%;
+  margin: 5px 5px;
+}
+section.grid-container .tst {
   margin-top: 20px;
 }
-section.containerseis .carrusel2 {
-  display: flex;
-  height: 200px;
-  gap: 5px;
-  justify-content: center;
-  align-items: center;
-}
-section.containerseis .carrusel2 :hover {
-  width: 300px;
-  height: 300px;
-}
-section.containerseis .carrusel2 img {
-  width: 15%;
-  height: 100%;
+section.grid-container .grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
   object-fit: cover;
-  border-radius: 40px;
-  border: 3px solid red;
-  transition: all ease-out 0.5s;
-  cursor: pointer;
+}
+section.grid-container .grid-galeria img:nth-child(n+4) {
+  display: none;
+}
+section.grid-container .grid-galeria img {
+  object-fit: cover;
 }
 
 main.containercap {
@@ -180,6 +187,7 @@ main.containercap .titulocap {
 section.steve img {
   max-width: 100%;
   height: auto;
+  box-shadow: 10px 10px 10px white;
 }
 section.steve div {
   display: flex;
@@ -201,6 +209,7 @@ main.containersiete {
 }
 main.containersiete img {
   width: 50%;
+  object-fit: cover;
 }
 main.containersiete .thortext {
   color: white;
@@ -229,33 +238,115 @@ section.containerocho .thortext3 {
     justify-content: center;
     align-items: center;
   }
+  section.container2 .galeria1 {
+    color: yellow;
+    text-align: center;
+    margin-bottom: 150px;
+  }
+  section.grid-container {
+    text-align: center;
+    color: yellow;
+  }
+  section.grid-container img {
+    width: 100%;
+    height: 100%;
+    margin: 5px 5px;
+  }
+  section.grid-container .tst {
+    margin-top: 20px;
+  }
+  section.grid-container .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    grid-gap: 10px;
+  }
+  section.grid-container .grid-galeria img:nth-child(n+4) {
+    display: block;
+  }
+  section.grid-container .grid-galeria img:nth-child(6) {
+    grid-row-start: span 2;
+  }
 }
-footer {
-  margin-top: 170px;
-  text-align: center;
-}
-footer h6 {
-  color: white;
-  font-size: 10px;
-}
-
 @media screen and (min-width: 1024px) {
   header li {
     justify-content: center;
     align-items: center;
   }
   header img {
-    width: 50%;
+    width: 50;
     justify-content: center;
     align-items: center;
   }
+  section.container2 .galeria1 {
+    color: yellow;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .carrusel {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .carrusel img {
+    width: 30%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 3px solid red;
+    transition: all ease-out 0.2s;
+    cursor: pointer;
+  }
+  .carrusel img:hover {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: 10;
+    transform: scale(1.5);
+  }
   footer {
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
   }
   footer h6 {
     color: white;
     font-size: 10px;
+  }
+  section.grid-container {
+    text-align: center;
+    color: yellow;
+  }
+  section.grid-container img {
+    width: 100%;
+    height: 100%;
+    margin: 5px 5px;
+  }
+  section.grid-container .tst {
+    margin-top: 20px;
+  }
+  section.grid-container .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+  }
+  section.grid-container .grid-galeria img:nth-child(n+4) {
+    display: block;
+  }
+  section.grid-container .grid-galeria img:nth-child(6) {
+    display: none;
+  }
+  section.grid-container .grid-galeria img:nth-child(7) {
+    grid-column-start: span 3;
+  }
+  section.grid-container .grid-galeria img:nth-child(3) {
+    grid-row-start: span 2;
   }
 }
 

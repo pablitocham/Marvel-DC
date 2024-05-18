@@ -94,8 +94,9 @@ section.container2 {
         cursor: pointer;
 
         &:hover {
-            max-height: 300px;
-            width:300px;
+            max-height: 500px;
+            width: 300px;
+            position: relative;
         }
     }
 }
@@ -112,49 +113,36 @@ footer {
 }
 
 main.containertres {
-    display: flex;
-    text-align: center;
+    @include flex;
 
-    .proyectoavengers {
+    .titulonick {
         color: $color-secundario;
-    }
-
-    .iniciotext2 {
-        color: white;
-    }
-
-    .iniciotext3 {
-        color: white;
-    }
-
-    .nick {
         text-align: center;
-        padding: 20px;
 
-        img {
-            width: 50%;
-        }
     }
 }
 
 section.containercuatro {
-    color: white;
-    text-align: center;
-    align-items: center;
-
-    .proytex {
-        color: white;
+    img {
+        max-width: 80%;
+        height: auto;
+        box-shadow: 1px 10px 15px 2px white;
+        object-fit: cover;
     }
 
-    span {
-        display: block;
-        text-decoration: underline;
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5px;
     }
 
     .pa {
-        color: pink;
+        color: $color-cuarto;
+        text-align: center;
     }
 }
+
 
 main.containercinco {
     @include flex;
@@ -169,10 +157,6 @@ main.containercinco {
 
     }
 
-    span {
-        display: block;
-        text-decoration: underline;
-    }
 }
 
 section.grid-container {
@@ -183,7 +167,8 @@ section.grid-container {
     img {
         width: 100%;
         height: 100%;
-        margin: 5px 5px,
+        margin: 5px 5px;
+        object-fit: cover;
     }
 
     .tst {
@@ -196,14 +181,6 @@ section.grid-container {
         padding: 20px;
         grid-gap: 10px;
         object-fit: cover;
-
-        img:nth-child(n+4) {
-            display: none;
-        }
-
-        img {
-            object-fit: cover;
-        }
 
     }
 
@@ -221,16 +198,16 @@ main.containercap {
 
 section.steve {
     img {
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
-        box-shadow: 10px 10px 10px white;
+        box-shadow: 1px 10px 15px 2px white;
+        object-fit: cover;
     }
 
     div {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        flex: 1;
         margin: 5px;
     }
 

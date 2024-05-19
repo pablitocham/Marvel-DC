@@ -32,83 +32,38 @@ header {
 }
 
 main.container {
-    max-width: 100%;
-    text-align: center;
-    padding: 10px;
+    @include flex;
 
-    nav {
-        ul {
-            text-align: center;
-            list-style: none;
-
-            li {
-                margin-top: 5px;
-
-                a {
-                    text-decoration: none;
-
-                    &:hover {
-                        color: $color-texto-hover;
-                    }
-                }
-            }
-        }
-    }
-
-    .inicio {
+    .tituloinicio {
         color: $color-secundario;
+        text-align: center;
     }
 
     .iniciotext {
         color: white;
+        text-align: center;
     }
 }
 
 section.container2 {
+    img {
+        max-width: 80%;
+        height: auto;
+        box-shadow: 1px 10px 15px 2px white;
+        object-fit: cover;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5px;
+        gap: 10px;
+    }
+
     .galeria1 {
         color: $color-cuarto;
         text-align: center;
-        margin-bottom: 100px;
-    }
-}
-
-.carrusel {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    gap: 5px;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    overflow-y: auto;
-    overflow-x: hidden;
-
-    img {
-        width: 80%;
-        height: auto;
-        max-height: 150px;
-        object-fit: cover;
-        border-radius: 10px;
-        border: 3px solid red;
-        transition: all ease-out 0.5s;
-        cursor: pointer;
-
-        &:hover {
-            max-height: 500px;
-            width: 300px;
-            position: relative;
-        }
-    }
-}
-
-footer {
-    margin-top: 170px;
-    text-align: center;
-
-
-    h3 {
-        color: white;
-        font-size: 10px;
     }
 }
 
@@ -118,7 +73,6 @@ main.containertres {
     .titulonick {
         color: $color-secundario;
         text-align: center;
-
     }
 }
 
@@ -181,10 +135,7 @@ section.grid-container {
         padding: 20px;
         grid-gap: 10px;
         object-fit: cover;
-
     }
-
-
 }
 
 main.containercap {
@@ -250,6 +201,17 @@ section.containerocho {
         color: white;
         text-align: center;
         padding: 15px;
+    }
+}
+
+footer {
+    margin-top: 170px;
+    text-align: center;
+
+
+    h3 {
+        color: white;
+        font-size: 10px;
     }
 }
 
